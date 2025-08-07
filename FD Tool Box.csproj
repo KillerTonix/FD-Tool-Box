@@ -9,4 +9,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Fonts\" />
+    <Folder Include="Materials\Images\" />
+    <Folder Include="Materials\Sounds\" />
+    <PackageReference Include="ModernWpfUI" Version="0.9.6" />
+	<Resource Include="Fonts\Nunito-VariableFont_wght.ttf" />
+  </ItemGroup>
+
 </Project>
