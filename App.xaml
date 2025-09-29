@@ -18,5 +18,6 @@
             <FontFamily x:Key="PTSansBold">pack://application:,,,/Fonts/#PTSansNarrow-Bold</FontFamily>
             <FontFamily x:Key="PTSansRegular">pack://application:,,,/Fonts/#PTSansNarrow-Regular</FontFamily>
         </ResourceDictionary>
+
     </Application.Resources>
 </Application>
