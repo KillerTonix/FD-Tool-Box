@@ -10,14 +10,13 @@
                 <ui:ThemeResources />
                 <ui:XamlControlsResources />
                 <!-- Other merged dictionaries here -->
-            </ResourceDictionary.MergedDictionaries>
-            
+            </ResourceDictionary.MergedDictionaries>        
             <FontFamily x:Key="Nunito">pack://application:,,,/Fonts/#Nunito-VariableFont_wght</FontFamily>
             <FontFamily x:Key="FiraSansBold">pack://application:,,,/Fonts/#FiraSansCondensed-Bold</FontFamily>
             <FontFamily x:Key="FiraSansRegular">pack://application:,,,/Fonts/#FiraSansCondensed-Regular</FontFamily>
             <FontFamily x:Key="PTSansBold">pack://application:,,,/Fonts/#PTSansNarrow-Bold</FontFamily>
             <FontFamily x:Key="PTSansRegular">pack://application:,,,/Fonts/#PTSansNarrow-Regular</FontFamily>
-        </ResourceDictionary>
-
+        </ResourceDictionary>        
     </Application.Resources>
+    
 </Application>

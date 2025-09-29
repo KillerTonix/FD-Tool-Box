@@ -155,10 +155,8 @@
                                         <GridViewColumn.CellTemplate>
                                             <DataTemplate>
                                                 <Button Command="{Binding DataContext.DeleteMaterialCommand, RelativeSource={RelativeSource AncestorType=ListView}}"
-                                                    CommandParameter="{Binding}" BorderThickness="0" Background="#FF333333" BorderBrush="{x:Null}"
-                                                    HorizontalAlignment="Left" ToolTip="Delete">
-                                                    <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE74D;" FontSize="14"
-                                                         VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                                                    CommandParameter="{Binding}" BorderThickness="0" Background="#FF333333" BorderBrush="{x:Null}" HorizontalAlignment="Left" ToolTip="Delete">
+                                                    <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE74D;" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                                                 </Button>
                                             </DataTemplate>
                                         </GridViewColumn.CellTemplate>
