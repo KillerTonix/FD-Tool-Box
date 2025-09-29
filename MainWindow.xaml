@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FD_Tool_Box"
+        xmlns:vm="clr-namespace:FD_Tool_Box.ViewModels"
         mc:Ignorable="d"
         xmlns:ui="http://schemas.modernwpf.com/2019"
         ui:WindowHelper.UseModernWindowStyle="True"
@@ -11,6 +12,10 @@
         Title="FD ToolBox" Height="800" MinHeight="800" Width="1100" MinWidth="1100"
         WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
 
+
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
 
     <Grid x:Name="MainGrid" Background="Black">
         <Grid.ColumnDefinitions>
@@ -149,8 +154,11 @@
                                     <GridViewColumn x:Name="DeleteHeader" Header="Delete">
                                         <GridViewColumn.CellTemplate>
                                             <DataTemplate>
-                                                <Button x:Name="DeleteMaterialButton" BorderThickness="0" Background="#FF333333"  HorizontalAlignment="Left" BorderBrush="{x:Null}" Click="DeleteMaterialButton_Click">
-                                                    <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xe74d;" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                                                <Button Command="{Binding DataContext.DeleteMaterialCommand, RelativeSource={RelativeSource AncestorType=ListView}}"
+                                                    CommandParameter="{Binding}" BorderThickness="0" Background="#FF333333" BorderBrush="{x:Null}"
+                                                    HorizontalAlignment="Left" ToolTip="Delete">
+                                                    <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE74D;" FontSize="14"
+                                                         VerticalAlignment="Center" HorizontalAlignment="Left"/>
                                                 </Button>
                                             </DataTemplate>
                                         </GridViewColumn.CellTemplate>
